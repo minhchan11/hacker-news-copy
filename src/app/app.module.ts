@@ -8,6 +8,7 @@ import { NewsComponent } from './news/news.component';
 import { CommentsComponent } from './comments/comments.component';
 import { CommentDetailComponent } from './comment-detail/comment-detail.component';
 import { ArticlePageComponent } from './article-page/article-page.component';
+import { NewArticleComponent } from './new-article/new-article.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ArticlePageComponent } from './article-page/article-page.component';
     NewsComponent,
     CommentsComponent,
     CommentDetailComponent,
-    ArticlePageComponent
+    ArticlePageComponent,
+    NewArticleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<h1> new article form </h1>
+
+  <label>New Article Title:</label>
+  <input type="text" #newTitle>
+  <label>New Article URL:</label>
+  <input type="text" #newUrl>
+  <label>New Id:</label>
+  <input type="number" #newId>
+  <button type="button" (click)="submit(newTitle.value, newUrl.value, newId.value)">Submit</button>

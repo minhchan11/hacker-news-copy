@@ -4,6 +4,7 @@ import { NewsComponent } from './news/news.component';
 import { CommentsComponent } from './comments/comments.component';
 import { CommentDetailComponent } from './comment-detail/comment-detail.component';
 import { ArticlePageComponent } from './article-page/article-page.component';
+import { NewArticleComponent } from './new-article/new-article.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'article-page/:id',
     component: ArticlePageComponent
+  },
+  {
+    path: 'new-article',
+    component: NewArticleComponent
   }
 ];
 
