@@ -3,6 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Comment } from '../comment.model';
 import { CommentService } from '../comment.service';
+import { Article } from '../article.model';
+
 
 @Component({
   selector: 'app-comment-detail',
@@ -14,6 +16,7 @@ import { CommentService } from '../comment.service';
 export class CommentDetailComponent implements OnInit {
   commentId: number;
   singleComment: Comment;
+  article: Article;
   constructor(
     private route: ActivatedRoute,
     private location: Location,
@@ -25,6 +28,7 @@ export class CommentDetailComponent implements OnInit {
       this.commentId = parseInt(urlParameters['id']);
     });
     this.singleComment = this.commentService.getIndividualComment(this.commentId);
+    this.article = this.commentService.getArticlebyComment(this.singleComment.articleId);
       }
 
 }

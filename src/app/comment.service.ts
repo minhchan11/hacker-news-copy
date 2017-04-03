@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Comment } from './comment.model';
 import { COMMENTS } from './comment-list';
 import { Article } from './article.model';
-import { ArticleService } from './article.service';
+import { ARTICLES } from './article-list';
 
 @Injectable()
 export class CommentService {
@@ -17,6 +17,14 @@ export class CommentService {
       if(  COMMENTS[i].id === commentId) {
         return COMMENTS[i];
       }
+    }
+  }
+
+  getArticlebyComment(articleId: number){
+    for (let i = 0; i < ARTICLES.length; i++) {
+      if( ARTICLES[i].id === articleId){
+        return ARTICLES[i];
+      };
     }
   }
 
