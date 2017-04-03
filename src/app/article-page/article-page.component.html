@@ -2,3 +2,5 @@
 <div *ngFor="let comment of comments">
   {{comment.content}}
 </div>
+
+<app-new-comment [article] = "article" (submitSend)="submit($event)"></app-new-comment>

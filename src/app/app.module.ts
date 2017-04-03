@@ -9,6 +9,7 @@ import { CommentsComponent } from './comments/comments.component';
 import { CommentDetailComponent } from './comment-detail/comment-detail.component';
 import { ArticlePageComponent } from './article-page/article-page.component';
 import { NewArticleComponent } from './new-article/new-article.component';
+import { NewCommentComponent } from './new-comment/new-comment.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NewArticleComponent } from './new-article/new-article.component';
     CommentsComponent,
     CommentDetailComponent,
     ArticlePageComponent,
-    NewArticleComponent
+    NewArticleComponent,
+    NewCommentComponent
   ],
   imports: [
     BrowserModule,

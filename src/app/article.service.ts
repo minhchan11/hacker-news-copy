@@ -22,4 +22,12 @@ export class ArticleService {
     }
     return output;
   }
+
+  getIndividualArticle(id: number) {
+    for (let i = 0; i < ARTICLES.length; i++) {
+      if(  ARTICLES[i].id === id) {
+        return ARTICLES[i];
+      }
+    }
+  }
 }

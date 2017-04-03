@@ -13,12 +13,15 @@ export class CommentService {
   }
 
   getIndividualComment(commentId: number) {
+    debugger;
+    console.log(COMMENTS);
     for (let i = 0; i < COMMENTS.length; i++) {
       if(  COMMENTS[i].id === commentId) {
         return COMMENTS[i];
       }
     }
   }
+
 
   getArticlebyComment(articleId: number){
     for (let i = 0; i < ARTICLES.length; i++) {

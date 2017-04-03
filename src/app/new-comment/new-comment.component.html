@@ -1,0 +1,12 @@
+<h1> new comment form </h1>
+
+<label>Comment Content:</label>
+<input type="text" #newContent>
+<br>
+<label>Comment Author:</label>
+<input type="text" #newAuthor>
+<br>
+<label>Comment Id:</label>
+<input type="number" #newId>
+<br>
+<button type="button" (click)="submit(newContent.value, newAuthor.value, newId.value)"> Submit </button>

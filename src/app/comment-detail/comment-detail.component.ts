@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { Comment } from '../comment.model';
 import { CommentService } from '../comment.service';
 import { Article } from '../article.model';
+import { COMMENTS } from '../comment-list';
 
 
 @Component({
@@ -27,6 +28,7 @@ export class CommentDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) =>{
       this.commentId = parseInt(urlParameters['id']);
     });
+    console.log(COMMENTS);
     this.singleComment = this.commentService.getIndividualComment(this.commentId);
     this.article = this.commentService.getArticlebyComment(this.singleComment.articleId);
       }

@@ -1,0 +1,16 @@
+#header {
+  background-color: #FF6600;
+  height: 40px;
+  display: block;
+}
+
+#holder {
+  margin-top: 90px;
+  border: solid;
+  background-color: #F6F6EF;
+  /*display: block;*/
+}
+
+.navbar-nav li{
+  margin-left: 0px;
+}

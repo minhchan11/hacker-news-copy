@@ -1,17 +1,17 @@
-<nav class="navbar navbar-fluid">
+<nav class = "navbar navbar-default navbar-fixed-top" id="header">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" routerLink="">HackerNews | </a>
     </div>
     <ul class="nav navbar-nav navbar-left">
-      <li><a routerLink="">News</a></li>
-      <li><a routerLink="comments">Comments</a></li>
+      <li><a routerLink="">News | </a></li>
+      <li><a routerLink="comments">Comments | </a></li>
       <li><a routerLink="new-article">Submit New Article</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="container">
+<div id="holder" class="container">
   <h2>{{title}}</h2>
   <router-outlet></router-outlet>
 </div>
