@@ -9,4 +9,13 @@ export class CommentService {
   getComments() {
     return COMMENTS;
   }
+
+  getIndividualComment(commentId: number) {
+    for (let i = 0; i < COMMENTS.length; i++) {
+      if(  COMMENTS[i].id === commentId) {
+        return COMMENTS[i];
+      }
+    }
+  }
+
 }

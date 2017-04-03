@@ -1,4 +1,4 @@
 <h2>Comments</h2>
-<div *ngFor = "let comment of comments">
+<a *ngFor = "let comment of comments" (click)="goToComment(comment)">
   <h4>{{comment.content}} by {{comment.author}}</h4>
-</div>
+</a>

@@ -1,6 +1,6 @@
 import { Comment } from './comment.model';
 
 export var COMMENTS: Comment[] = [
-  new Comment("James","Nice"),
-  new Comment("Joe","Good")
+  new Comment("James","Nice", 1),
+  new Comment("Joe","Good", 2)
 ]
