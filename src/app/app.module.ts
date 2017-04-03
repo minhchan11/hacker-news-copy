@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NewsComponent } from './news/news.component';
 import { CommentsComponent } from './comments/comments.component';
 import { CommentDetailComponent } from './comment-detail/comment-detail.component';
+import { ArticlePageComponent } from './article-page/article-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsComponent,
     CommentsComponent,
-    CommentDetailComponent
+    CommentDetailComponent,
+    ArticlePageComponent
   ],
   imports: [
     BrowserModule,

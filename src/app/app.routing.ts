@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NewsComponent } from './news/news.component';
 import { CommentsComponent } from './comments/comments.component';
 import { CommentDetailComponent } from './comment-detail/comment-detail.component';
-
+import { ArticlePageComponent } from './article-page/article-page.component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'comments/:id',
     component: CommentDetailComponent
+  },
+  {
+    path: 'article-page/:id',
+    component: ArticlePageComponent
   }
 ];
 

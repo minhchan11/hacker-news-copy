@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Comment } from './comment.model';
 import { COMMENTS } from './comment-list';
+import { Article } from './article.model';
+import { ArticleService } from './article.service';
 
 @Injectable()
 export class CommentService {

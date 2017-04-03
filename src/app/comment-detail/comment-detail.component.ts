@@ -10,6 +10,7 @@ import { CommentService } from '../comment.service';
   styleUrls: ['./comment-detail.component.css'],
   providers: [CommentService]
 })
+
 export class CommentDetailComponent implements OnInit {
   commentId: number;
   singleComment: Comment;

@@ -2,4 +2,5 @@
 
 <div *ngFor="let article of articles">
   <h3> <a href="{{article.url}}"><em>{{article.title}}</em></a></h3>
+  <a (click)="goToArticle(article)">comments</a>
 </div>
